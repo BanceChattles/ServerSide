@@ -15,8 +15,12 @@ app.get('/', (req, res) => {
 });
 
 app.get('/profile', (req, res) => {
-    res.send(req.query.id);
-  });
+    const person = people.profiles.find(p => p.id === req.query.id);
+    res.render('profile', {
+      title: `About ${person.firstname} ${person.lastname}`,
+      person,
+    });
+});
 
 const server = app.listen(7000, () => {
   console.log(`Express running → PORT ${server.address().port}`);
