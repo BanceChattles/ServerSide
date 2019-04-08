@@ -9,6 +9,7 @@ app.get('/', (req, res) => {
 
 app.set('view engine', 'pug');
 
-const server = app.listen(7000, () => {
+const server = app.listen(7001, () => {
     console.log(`Express running → PORT ${server.address().port}`);
-});
+  });
+//   For some reason changing it to 7001 helped?!
