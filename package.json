@@ -4,9 +4,9 @@
   "description": "A simple website built with Node, Express and Pug",
   "main": "server.js",
   "scripts": {
-    "start": ""
+    "start": "node server.js"
   },
-  "author": "Ayo Isaiah",
+  "author": "Chance Battles(following instructions)",
   "license": "MIT",
   "dependencies": {
     "express": "^4.16.3",
